@@ -86,3 +86,32 @@ The best way to do layouts!
     flex-wrap: wrap;
 }
 ```
+
+### media queries
+
+Here is a standard responsive design media query setup. After putting this in your CSS, you are able to use `rem` units anywhere in your site, and they will be automatically responsive.
+
+```css
+/* mobile */
+html {
+    font-size: 14px;
+}
+/* tablet */
+@media only screen and (min-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+}
+/* desktop */
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+/* extra large */
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 20px;
+    }
+}
+```
